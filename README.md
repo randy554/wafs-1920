@@ -11,7 +11,7 @@
 - Stap 3: Bekijk je resultaat. Hoeveel vragen heb je goed?
 
 ## Live Demo
-[live app demo](https://the-trivia-app.herokuapp.com/)
+[live app demo](https://randy554.github.io/wafs-1920/)
 
 ### Overzichtspagina
 
