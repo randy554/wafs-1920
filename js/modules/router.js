@@ -14,11 +14,13 @@ routie({
 
     'results': function () {
 
-        // let lStorageApiData = JSON.parse(localStorage.getItem('APIdata'));
+        // API Questions & correct answers from local storage
         let lStorageApiData = data.getLocalStorage()
 
+        // User answers
         data.getUserAnswers();
 
+        // Match user answers with correct answers and calculate score
         function calculateScore(accumulator, currentValue, currentIndex) {
 
 
@@ -39,6 +41,8 @@ routie({
         }
 
         data.totalScore = data.userAnswers.reduce(calculateScore, 0);
+
+        data.calcScore(lStorageApiData);
 
         // Display results page
         render.resultsPage(helper.getResultsPage(), data.userAnswers, lStorageApiData, data.totalScore);

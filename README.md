@@ -54,14 +54,25 @@
 
 ## Actor diagram
 
+<details>
+
+<summary>Actor diagram</summary>
+
 ![Actor diagram](https://raw.githubusercontent.com/randy554/web-app-from-scratch-1920/master/images/Actor%20Diagram%20Trivia%20app.png)
 
+</details>
 
 ## Interaction diagram
 
-![Question page](https://raw.githubusercontent.com/randy554/web-app-from-scratch-1920/master/images/Interaction%20Diagram%20-%20Questionspage.png)
+<details>
 
-![Result page](https://raw.githubusercontent.com/randy554/web-app-from-scratch-1920/master/images/Interaction%20Diagram%20-%20Resultspage.png)
+<summary>Interaction diagram</summary>
+
+![Question page](images/diagram1.png) 
+
+![Result page](images/diagram3.png)
+
+</details>
 
 ## API
 
