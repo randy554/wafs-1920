@@ -1,0 +1,236 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+body > header > a {
+  text-decoration: none;
+}
+
+body > header > a > h1 {
+  color: white;
+  margin: 0;
+  padding: 20px;
+  background: rgb(34,193,195);
+  background: -webkit-linear-gradient(bottom, rgba(34,193,195,1) 0%, rgba(45,115,253,1) 100%);
+  background: -o-linear-gradient(bottom, rgba(34,193,195,1) 0%, rgba(45,115,253,1) 100%);
+  background: linear-gradient(to top, rgba(34,193,195,1) 0%, rgba(45,115,253,1) 100%);
+}
+
+main > nav > ul {
+  display: flex;
+}
+
+main > nav > ul > li {
+  flex: 1;
+  background-color: #22c1c3;
+  text-align: center;
+  list-style-type: none;
+  color: #fff;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+main > nav > ul > li:hover {
+  cursor: pointer;
+  background-color: #2C78F8;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#categoryList {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#questionList {
+  margin-top: 50px;
+  padding-left: 0;
+  color: #000;
+}
+
+#questionList > li {
+  list-style-type: none;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#questionList > p {
+  background-color: #207ce5;
+  color: #207ce5;
+  padding: 5px;
+}
+
+#questionList > p:hover {
+  background-color: transparent;
+}
+
+.questionBlock {
+  background-color: #f1f1f1;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px #0c1f31;
+  min-width: 650px;
+  max-width: 750px;
+}
+
+.questionBlock:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+#results {
+  color: black;
+  display: none;
+  justify-content: center;
+}
+
+#quiz {
+  display: none;
+  justify-content: center;
+}
+
+#quiz p {
+  color: black;
+  display: none;
+}
+
+.quizQuestions {
+  font-weight: 700;
+  list-style-type: none;
+  padding-bottom: .5em;
+  letter-spacing: .3px;
+}
+
+#button_box {
+  margin-top: 15px;
+}
+
+button[type=submit] {
+  display: none;
+}
+
+.True {
+    border: 3px solid #58d68d;
+}
+
+.False {
+    border: 3px solid #f44336;
+}
+
+.loaderBlock {
+    display: none;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.loader {
+  border: 0.5em solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 0.5em solid #3498db;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#filter {
+  display: flex;
+  justify-content: center;
+}
+
+#filter > #goed {
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+
+#filter > #goed:hover {
+  border: 1px solid #4CAF50;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+
+#filter > #fout {
+  border: 1px solid #f44336;
+  color: #f44336;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+
+#filter > #fout:hover {
+  border: 1px solid #f44336;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+
+#filter > #all {
+  border: 1px solid #008CBA;;
+  color: #008CBA;;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+
+#filter > #all:hover {
+  border: 1px solid #008CBA;;
+  background-color: #008CBA;;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}

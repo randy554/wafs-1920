@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Trivia app</title>
+  </head>
+  <body>
+
+    <header id="container">
+      <a href="/">
+          <h1 id="doehet">Trivia API</h1>
+      </a>
+    </header>
+
+    <main id="category">
+
+      <nav>
+        <ul id="categoryList">
+          <li data-category-id="11">Film</li>
+          <li data-category-id="12">Music</li>
+          <li data-category-id="14">Tv</li>
+          <li data-category-id="21">Sports</li>
+          <li data-category-id="27">Animals</li>
+          <li data-category-id="28">Vehicles</li>
+        </ul>
+      </nav>
+
+
+    </main>
+
+    <div class="loaderBlock">
+        <div class="loader"></div>
+    </div>
+
+    <!--    Quiz pagina-->
+    <section id="quiz">
+
+        <h2>Questions</h2>
+
+        <form action="#results">
+            <ul id="questionList">
+            </ul>
+            <button id="checkAntwoorden" type="submit">Results</button>
+        </form>
+
+    </section>
+
+    <!--    Resultaten pagina-->
+    <section id="results">
+
+        <div id="filter">
+            <button id="goed">Goed</button>
+            <button id="fout">Fout</button>
+        </div>
+
+    </section>
+
+    <!-- <script type="text/javascript" src="js/lib/routie.js"></script> -->
+    <!-- <script type="text/javascript" src="js/modules/router.js"></script> -->
+     <script type="module" src="js/main.js"></script>
+  </body>
+</html>
