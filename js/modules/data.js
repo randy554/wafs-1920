@@ -56,6 +56,12 @@ export let data = {
 
     this.allQuizApiData = jsonReturnData;
 
+  },
+
+  getLocalStorage : function () {
+
+    return JSON.parse(localStorage.getItem('APIdata'));
+
   }
 
 };

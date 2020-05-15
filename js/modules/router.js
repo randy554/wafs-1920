@@ -14,7 +14,8 @@ routie({
 
     'results': function () {
 
-        let lStorageApiData = JSON.parse(localStorage.getItem('APIdata'));
+        // let lStorageApiData = JSON.parse(localStorage.getItem('APIdata'));
+        let lStorageApiData = data.getLocalStorage()
 
         data.getUserAnswers();
 

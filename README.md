@@ -100,6 +100,8 @@ De API biedt de mogelijkheid om tussen de 1 en 50 Trivia vragen te terug te krij
 
 ## Bronnen
 
+* [insertAdjacentHTML](https://www.w3schools.com/jsref/met_node_insertadjacenthtml.asp)
+* [appendChild](https://www.w3schools.com/jsref/met_node_appendchild.asp)
 * [Get url parameters](https://stackoverflow.com/questions/523266/how-can-i-get-a-specific-parameter-from-location-search)
 * [Local storage](https://www.youtube.com/watch?v=T9GWHFDcELQ)
 * [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
