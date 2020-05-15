@@ -14,23 +14,23 @@ routie({
 
     'results': function () {
 
-        let lokaleFly = JSON.parse(localStorage.getItem('APIdata'));
+        let lStorageApiData = JSON.parse(localStorage.getItem('APIdata'));
 
         data.getUserAnswers();
 
         function calculateScore(accumulator, currentValue, currentIndex) {
 
 
-            if(currentValue === lokaleFly[currentIndex].correct_answer){
+            if(currentValue === lStorageApiData[currentIndex].correct_answer){
 
-                      // Store the API in Local Storage
-                lokaleFly[currentIndex].userNieuweAnt = "goed";
-                localStorage.setItem('APIdata', JSON.stringify(lokaleFly));
+                // Store the API in Local Storage
+                lStorageApiData[currentIndex].userNieuweAnt = "goed";
+                localStorage.setItem('APIdata', JSON.stringify(lStorageApiData));
                 accumulator++;
             }else {
 
-                lokaleFly[currentIndex].userNieuweAnt = "fout";
-                localStorage.setItem('APIdata', JSON.stringify(lokaleFly));
+                lStorageApiData[currentIndex].userNieuweAnt = "fout";
+                localStorage.setItem('APIdata', JSON.stringify(lStorageApiData));
 
             }
 
@@ -40,7 +40,7 @@ routie({
         data.totalScore = data.userAnswers.reduce(calculateScore, 0);
 
         // Display results page
-        render.resultsPage(helper.getResultsPage(), data.userAnswers, lokaleFly, data.totalScore);
+        render.resultsPage(helper.getResultsPage(), data.userAnswers, lStorageApiData, data.totalScore);
 
 
 

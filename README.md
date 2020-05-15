@@ -100,7 +100,8 @@ De API biedt de mogelijkheid om tussen de 1 en 50 Trivia vragen te terug te krij
 
 ## Bronnen
 
-* [Local storage](http://projects.jga.me/routie/)
+* [Get url parameters](https://stackoverflow.com/questions/523266/how-can-i-get-a-specific-parameter-from-location-search)
+* [Local storage](https://www.youtube.com/watch?v=T9GWHFDcELQ)
 * [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 * [Reduce](https://www.youtube.com/watch?v=-LFjnY1PEDA&t=348s)
 * [Filter](https://www.youtube.com/watch?v=qmnH5MT_luk&t=146s)

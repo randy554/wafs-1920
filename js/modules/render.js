@@ -127,8 +127,6 @@ export const render = {
       }
       divBlock.insertAdjacentHTML('beforeend', `<p>Juiste antwoord: ${triviaObject.correct_answer}</p>`);
 
-
-
     });
 
     // Display submit button
@@ -150,11 +148,32 @@ export const render = {
     // Hide the quiz page
     this.toggleQuizPage("off");
 
+
+    // Button container
+    let divFilter = document.createElement("DIV");
+    divFilter.setAttribute("id", "filter");
+
+
+    // All button
+    let allButton = document.createElement("BUTTON");
+    allButton.setAttribute("id", "all");
+    let allText   = document.createTextNode("All");
+    allButton.appendChild(allText);
+
+       // Header element
     let h2        = document.createElement("H2");
     let textScore = document.createTextNode(`Je hebt ${score} van de 12 goed!`);
     h2.appendChild(textScore);
+
+    // Add button to container
+    divFilter.appendChild(allButton);
+
+    // Insert elements one after the other
+    headPageElement.appendChild(divFilter);
     headPageElement.appendChild(h2);
 
+    // Set reset filter
+    this.resetFilter();
 
     userData.map((triviaObject, index) => {
 
@@ -196,21 +215,32 @@ export const render = {
 
   },
 
+  resetFilter : function () {
+
+    const allFilter  = document.querySelector("#all");
+
+    allFilter.addEventListener("click", function (element) {
+
+        // Reload webpage
+        location.reload();
+
+    });
+  },
+
   setFilterGoed : function (headPageElement, apiData, userData, score) {
 
-    const goedFilter     = document.querySelector("#goed");
+    const goedFilter  = document.querySelector("#goed");
 
     goedFilter.addEventListener("click", function (element) {
 
-        function showOnly (currentValue, index) {
+        function showOnly (currentValue) {
 
           return currentValue.userNieuweAnt == "goed";
 
         }
 
-
-        let someEpic = userData.filter(showOnly);
-        render.updateResultsPage(headPageElement, apiData, someEpic, score);
+        let rightAnswers = userData.filter(showOnly);
+        render.updateResultsPage(headPageElement, apiData, rightAnswers, score);
 
     });
 
@@ -218,18 +248,17 @@ export const render = {
 
   setFilterFout : function (headPageElement, apiData, userData, score) {
 
-    const foutFilter     = document.querySelector("#fout");
+    const foutFilter  = document.querySelector("#fout");
 
     foutFilter.addEventListener("click", function (element) {
 
-        function showOnlyAnders (currentValue, index) {
+        function showOnly (currentValue) {
 
           return currentValue.userNieuweAnt == "fout";
 
         }
 
-
-        let ietsAnders = userData.filter(showOnlyAnders);
+        let wrongAnswers = userData.filter(showOnly);
 
         headPageElement.insertAdjacentHTML('beforeend', `<div id="filter">
             <button id="goed">Goed</button>
@@ -237,7 +266,7 @@ export const render = {
             <button id="fout">Fout</button>
         </div>`);
 
-        render.updateResultsPage(headPageElement, apiData, ietsAnders, score);
+        render.updateResultsPage(headPageElement, apiData, wrongAnswers, score);
 
     });
 
