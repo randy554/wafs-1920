@@ -42,8 +42,6 @@ routie({
 
         data.totalScore = data.userAnswers.reduce(calculateScore, 0);
 
-        data.calcScore(lStorageApiData);
-
         // Display results page
         render.resultsPage(helper.getResultsPage(), data.userAnswers, lStorageApiData, data.totalScore);
 
