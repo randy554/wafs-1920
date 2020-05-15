@@ -1,54 +1,82 @@
 # Web App From Scratch with the Trivia App
 
-Een client-side trivia app met 12 leuke vragen!
+## Concept
 
-![Trivia app screenshot](https://raw.githubusercontent.com/randy554/web-app-from-scratch-1920/master/images/Trivia%20app.png)
+#### Een client-side trivia app met 12 leuke vragen!
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+- Stap 1: Selecteer een categorie om vragen over te beantwoorden
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+- Stap 2: Vul alle 12 vragen in (True or False) en verstuur je antwoorden
+
+- Stap 3: Bekijk je resultaat. Hoeveel vragen heb je goed?
+
+## Live Demo
+[live app demo](https://the-trivia-app.herokuapp.com/)
+
+### Overzichtspagina
+
+![Trivia app screenshot 1](images/app_pagina1.png)
+
+### Vragenpagina
+
+![Trivia app screenshot 2](images/app_pagina2.png)
+
+### Resultatenpagina 
+
+![Trivia app screenshot 3](images/app_pagina3.png)
 
 
-<!-- Maybe a table of contents here? 📚 -->
 ### Inhoudsopgave
+* [Live Demo](#live-demo)
+* [Installeren](#installeren)
+* [Actor diagram](#actor-diagram)
+* [Interaction diagram](#interaction-diagram)
+* [API](#api)
+* [To-do](#to-do)
+* [Bronnen](#bronnen)
+* [License](#license)
 
-- Installeren
-- Actor diagram
-- API
-- To-do
-- License
 
-<!-- How about a section that describes how to install this project? 🤓 -->
-### Installeren
+## Installeren
 
-<!-- ...but how does one use this project? What are its features 🤔 -->
+```markdown
+ 
+  #1. clone de repo
+  https://github.com/randy554/wafs-1920.git
 
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
+  #2. Navigeer naar de root van de app
+  open wafs-1920
 
-### Actor diagram
+  #3. Bekijk site
+  Open -> index.html bekijk site: http://localhost:8080
+
+```
+
+## Actor diagram
 
 ![Actor diagram](https://raw.githubusercontent.com/randy554/web-app-from-scratch-1920/master/images/Actor%20Diagram%20Trivia%20app.png)
 
 
-### Interaction diagram
+## Interaction diagram
 
 ![Question page](https://raw.githubusercontent.com/randy554/web-app-from-scratch-1920/master/images/Interaction%20Diagram%20-%20Questionspage.png)
 
 ![Result page](https://raw.githubusercontent.com/randy554/web-app-from-scratch-1920/master/images/Interaction%20Diagram%20-%20Resultspage.png)
 
-### API
+## API
 
 De app maakt gebruik van de [Trivia API](https://opentdb.com/api_config.php). De response data is <strong>JSON</strong>. Er kan gebruik worden gemaakt van een SESSION TOKEN. Deze zorgt ervoor dat gedurende de sessie alleen maar unieke vragen worden terug gestuurd. De sessie doet 6 uur. Verder kan de API zonder key worden gebruikt. Er is in de documentatie helaas niks te
 vinden over limiet van API gebruik.
 
 #### Voorbeeld van response data:
 https://opentdb.com/api.php?amount=12&category=12&difficulty=easy&type=boolean
+![Trivia API](images/%20https_opentdb_API.png)
 
 #### Omschrijving
 De API biedt de mogelijkheid om tussen de 1 en 50 Trivia vragen te terug te krijgen. Deze vragen kunnen gaan over verschillende categoriën zoals politiek & geschiedenis. Verder kun je de moeilijkheidsgraad van de vragen aanpassen op easy, medium en hard. Ook kan er gekozen worden om multiple choice antwoorden of boolean antwoorden te ontvangen.
 
 
-### To Do
+## To Do
  - [x] WAFS Github forken
  - [x] WAFS Project in Github aanmaken
  - [x] API vinden
@@ -62,15 +90,21 @@ De API biedt de mogelijkheid om tussen de 1 en 50 Trivia vragen te terug te krij
  - [x] Fetch error handeling
  - [x] Template engine transparency installeren
 
- - [] fix module probleem
- - [] fix routie probelemen
- - [] schrijf functies a.d.h.v. diagram
+ - [x] fix module probleem
+ - [x] fix routie import problemen
 
-### Libraries
+
+## Libraries
 
 [Routi](http://projects.jga.me/routie/)
 
+## Bronnen
 
-### License
+* [Local storage](http://projects.jga.me/routie/)
+* [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+* [Reduce](https://www.youtube.com/watch?v=-LFjnY1PEDA&t=348s)
+* [Filter](https://www.youtube.com/watch?v=qmnH5MT_luk&t=146s)
+
+## License
 
 Creative Commons Attribution-ShareAlike 4.0 International <a href="License https://creativecommons.org/licenses/by-sa/4.0/" alt="Creative Commons Licens"> Link </a>
