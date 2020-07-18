@@ -1,6 +1,6 @@
 # Web App From Scratch with the Trivia App
 
-Voor het vak Web Apps From Scratch is het de bedoeling dat er een webapplicatie gebouwd wordt zonder frameworks of onnodige bibliotheken. Dat betekent dus met zoveel mogelijk vanille HTML, CSS & JavaScript. Het eindproduct moet een modulaire web-app worden met één pagina (SPA). En om de site te voorzien van content moet er gebruikt worden gemaakt van een externe API.
+Voor het vak Web Apps From Scratch is het de bedoeling dat er een webapplicatie gebouwd wordt zonder frameworks of onnodige bibliotheken. Dat betekent dus met zoveel mogelijk vanilla HTML, CSS & JavaScript. Het eindproduct moet een modulaire web-app worden met één pagina (SPA). En om de site te voorzien van content moet er gebruikt worden gemaakt van een externe API.
 
 ## Concept
 
